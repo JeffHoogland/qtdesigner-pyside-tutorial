@@ -4,8 +4,8 @@ from PySide.QtCore import *
 from ui_mainWindow import Ui_mainWindow
 
 class MainWindow(QMainWindow, Ui_mainWindow):
-    def __init__(self, parent=None):
-        super(MainWindow, self).__init__(parent)
+    def __init__(self):
+        super(MainWindow, self).__init__()
         self.setupUi(self)
         self.assignWidgets()
         self.show()
